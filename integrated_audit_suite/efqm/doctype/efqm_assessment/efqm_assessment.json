@@ -1,0 +1,70 @@
+{
+ "doctype": "DocType",
+ "name": "EFQM Assessment",
+ "module": "EFQM",
+ "custom": 0,
+ "track_changes": 1,
+ "allow_copy": 1,
+ "fields": [
+  {
+   "fieldname": "assessment_title",
+   "fieldtype": "Data",
+   "label": "Assessment Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dimension",
+   "fieldtype": "Select",
+   "label": "EFQM Dimension",
+   "options": "Leadership\nStrategy\nPeople\nPartnerships & Resources\nProcesses, Products & Services\nCustomer Results\nPeople Results\nSociety Results\nBusiness Results"
+  },
+  {
+   "fieldname": "score",
+   "fieldtype": "Int",
+   "label": "Score",
+   "default": "0"
+  },
+  {
+   "fieldname": "evaluator",
+   "fieldtype": "Link",
+   "label": "Evaluator",
+   "options": "User"
+  },
+  {
+   "fieldname": "strengths",
+   "fieldtype": "Text Editor",
+   "label": "Strengths"
+  },
+  {
+   "fieldname": "improvement_actions",
+   "fieldtype": "Text Editor",
+   "label": "Improvement Actions"
+  }
+ ],
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "report": 1,
+   "share": 1
+  },
+  {
+   "role": "Quality Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 0,
+   "email": 1,
+   "print": 1,
+   "report": 1,
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

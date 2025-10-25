@@ -1,0 +1,72 @@
+{
+ "doctype": "DocType",
+ "name": "ISO 9001 Clause",
+ "module": "ISO 9001",
+ "custom": 0,
+ "is_submittable": 0,
+ "allow_copy": 1,
+ "editable_grid": 1,
+ "track_changes": 1,
+ "fields": [
+  {
+   "fieldname": "clause_number",
+   "fieldtype": "Data",
+   "label": "Clause Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "clause_title",
+   "fieldtype": "Data",
+   "label": "Clause Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "compliance_status",
+   "fieldtype": "Select",
+   "label": "Compliance Status",
+   "options": "Compliant\nPartially Compliant\nNon-Compliant"
+  },
+  {
+   "fieldname": "evidence",
+   "fieldtype": "Text Editor",
+   "label": "Evidence"
+  },
+  {
+   "fieldname": "owner",
+   "fieldtype": "Link",
+   "label": "Process Owner",
+   "options": "User"
+  }
+ ],
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "report": 1,
+   "share": 1
+  },
+  {
+   "role": "Quality Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 0,
+   "email": 1,
+   "print": 1,
+   "report": 1,
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

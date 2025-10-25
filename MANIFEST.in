@@ -1,0 +1,3 @@
+include README.md
+include license.txt
+recursive-include integrated_audit_suite *.py *.json

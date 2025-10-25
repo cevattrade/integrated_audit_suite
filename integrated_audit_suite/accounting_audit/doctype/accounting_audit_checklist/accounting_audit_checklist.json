@@ -1,0 +1,70 @@
+{
+ "doctype": "DocType",
+ "name": "Accounting Audit Checklist",
+ "module": "Accounting Audit",
+ "custom": 0,
+ "track_changes": 1,
+ "allow_copy": 1,
+ "fields": [
+  {
+   "fieldname": "audit_area",
+   "fieldtype": "Data",
+   "label": "Audit Area",
+   "reqd": 1
+  },
+  {
+   "fieldname": "control_reference",
+   "fieldtype": "Data",
+   "label": "Control Reference"
+  },
+  {
+   "fieldname": "testing_procedure",
+   "fieldtype": "Small Text",
+   "label": "Testing Procedure"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Not Started\nIn Progress\nCompleted\nIssue Found",
+   "reqd": 1
+  },
+  {
+   "fieldname": "findings",
+   "fieldtype": "Text Editor",
+   "label": "Findings"
+  },
+  {
+   "fieldname": "responsible_owner",
+   "fieldtype": "Link",
+   "label": "Responsible Owner",
+   "options": "User"
+  }
+ ],
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "report": 1,
+   "share": 1
+  },
+  {
+   "role": "Accounts Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 0,
+   "email": 1,
+   "print": 1,
+   "report": 1,
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
