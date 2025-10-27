@@ -20,6 +20,18 @@
    "options": "Strategic\nOperational\nFinancial\nCompliance\nReputational"
   },
   {
+   "fieldname": "likelihood",
+   "fieldtype": "Select",
+   "label": "Likelihood",
+   "options": "Rare\nUnlikely\nPossible\nLikely\nAlmost Certain"
+  },
+  {
+   "fieldname": "impact",
+   "fieldtype": "Select",
+   "label": "Impact",
+   "options": "Insignificant\nMinor\nModerate\nMajor\nSevere"
+  },
+  {
    "fieldname": "risk_owner",
    "fieldtype": "Link",
    "label": "Risk Owner",
@@ -29,7 +41,14 @@
    "fieldname": "risk_rating",
    "fieldtype": "Select",
    "label": "Risk Rating",
-   "options": "Low\nMedium\nHigh\nCritical"
+   "options": "Low\nMedium\nHigh\nCritical",
+   "read_only": 1
+  },
+  {
+   "fieldname": "risk_score",
+   "fieldtype": "Int",
+   "label": "Risk Score",
+   "read_only": 1
   },
   {
    "fieldname": "mitigation_plan",
